@@ -3,17 +3,9 @@
   "dockerComposeFile": "docker-compose.yml",
   "service": "react",
   "workspaceFolder": "/app/pacebook",
-  "extensions": [
-    "esbenp.prettier-vscode",
-    "dbaeumer.vscode-eslint",
-    "ms-azuretools.vscode-docker"
-  ],
+  "extensions": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint"],
   "settings": {
-    "eslint.validate": [
-      "javascript",
-      "typescript",
-      "typescriptreact"
-    ],
+    "eslint.validate": ["javascript", "typescript", "typescriptreact"],
     "[javascript]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
