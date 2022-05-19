@@ -1,0 +1,13 @@
+version: "3"
+services:
+  react:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - /app/pacebook/node_modules
+      - .:/app/pacebook
+    stdin_open: true
+

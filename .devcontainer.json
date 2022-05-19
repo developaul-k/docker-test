@@ -1,0 +1,19 @@
+{
+  "name": "ReactApp",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "react",
+  "workspaceFolder": "/app/pacebook",
+  "extensions": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint"],
+  "settings": {
+    "eslint.validate": [
+      "vue",
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact"
+    ],
+    "[scss]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
