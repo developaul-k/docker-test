@@ -3,7 +3,11 @@
   "dockerComposeFile": "docker-compose.yml",
   "service": "react",
   "workspaceFolder": "/app/pacebook",
-  "extensions": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint"],
+  "extensions": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "ms-azuretools.vscode-docker"
+  ],
   "settings": {
     "eslint.validate": [
       "javascript",
@@ -14,6 +18,7 @@
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[scss]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+    "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
