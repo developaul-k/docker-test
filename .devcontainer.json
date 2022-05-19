@@ -6,12 +6,13 @@
   "extensions": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint"],
   "settings": {
     "eslint.validate": [
-      "vue",
       "javascript",
-      "javascriptreact",
       "typescript",
       "typescriptreact"
     ],
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "[scss]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"

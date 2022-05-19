@@ -1,16 +1,16 @@
 module.exports = {
-	root: true,
-	env: {
-		browser: true,
-		node: true,
-	},
-	extends: [
-		'@nuxtjs/eslint-config-typescript',
-		'plugin:nuxt/recommended',
-		'prettier',
-		//'plugin:prettier/recommended', 권장하지 않는다
-	],
-	plugins: [],
-	// add your custom rules here
-	rules: {},
-};
+  root: true,
+  env: {
+    node: true,
+  },
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint'],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'prettier',
+  ],
+  rules: {
+    '@typescript-eslint/no-explicit-any': 0,
+  },
+}
