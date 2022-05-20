@@ -1,6 +1,6 @@
 import { useRecoilState, useRecoilValue } from 'recoil';
-import { textState } from '../../store/text/Atom';
-import { replaceTextState } from '../../store/text/Selector';
+import { textState } from '../../store/Text/Atom';
+import { replaceTextState } from '../../store/Text/Selector';
 import './App.css';
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
       <p>{replacedText}</p>
       <input
         type="text"
+        placeholder="Enter your text!"
         defaultValue={text}
         onChange={(e) => setText(e.currentTarget.value)}
       />
